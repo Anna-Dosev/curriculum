@@ -22,4 +22,13 @@ Collections of primitive data types are mutable, which means that when they are 
 * arrays
 * objects 
 
-//When thinking about immutability, ask yourself: are these things sharing hte same address?
+//When thinking about immutability, ask yourself: are these things sharing the same address?
+
+Additional notes: 
+Data stored in a variable is either a primitive type or reference type
+
+primitive --> simple atomic values, stored as value to a variable
+    undefined, null, boolean, number, string, symbol
+    immutable
+reference --> stored as references in memory, consist of multiple properties assigned to them
+    objects, arrays, functions.
