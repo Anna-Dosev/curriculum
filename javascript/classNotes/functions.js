@@ -78,8 +78,8 @@ function tipAmmount(bill, percentage) {
 }
 
 //2. Write a function that takes in an array, and returns the length of the array.
+let array = [1, 2, 3, 4, 5, 6]
 function lengthOfArray(arrayParameter) {
-    let array = [1, 2, 3, 4, 5, 6]
     return array.length
 }
 
@@ -90,19 +90,19 @@ function friendsNames(name1, name2, name3) {
 
 //4. Write a function that takes in an object of userData and returns the sentence
     //`The user's name is __, they are located in __, and they love the color __!`
-function aboutUser() {
     let userData = {
         name3: 'Anna',
         location: 'Pensacola',
         favoriteColor: 'Blue'
     }
+    function aboutUser() {
     return `The user's name is ${userData.name3}, they are located in ${userData.location}, and they love the color ${userData.favoriteColor}!`
 }
 
 
 //5. Write a function that takes in an array of numbers and returns the number in the last index
+let array2 = [2, 4, 6, 8]
 function arrayOfNumbers() {
-    let array2 = [2, 4, 6, 8]
     return array2.pop()
 }
 
