@@ -99,11 +99,14 @@ const myCars = [
     { make: 'Mercedes', model: 'G Wagon', year: 2022, mileage: 500 },
     ];
 
-myCars.forEach(myCars => {
-    for (let mileage in myCars) {
-        console.log(`mileage: ${myCars[mileage]}`)
-    }
-});
+//myCars.forEach(car => { //for each of the obj in myCars, i want to refer to each obj as myCar
+        //console.log(`mileage: ${car.mileage}`)
+    //})
+    //car is the individual that we are going over 
+
+for (let i = 0; i <myCars.length; i++) { //shorter way- for loops do not need to be within a function
+    console.log(myCars[i].mileage)
+}
 
 
 
