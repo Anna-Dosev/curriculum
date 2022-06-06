@@ -1,0 +1,35 @@
+* {
+    box-sizing:border-box;
+}
+
+.purple {
+    background-color: #8e7cc3;
+}
+
+.red {
+    background-color: #e06566;
+}
+
+.green {
+    background-color: #93c47d;
+    margin: 0 14px;
+}
+
+.orange {
+    background-color: #ff9900;
+}
+
+.box {
+    border: 2px solid #444;
+}
+
+.box--wide {
+    height: 80px;
+    margin-bottom: 14px;
+}
+
+.box--tall {
+    float: left;
+    height: 240px;
+    width: calc(33% - 9.3px);
+}

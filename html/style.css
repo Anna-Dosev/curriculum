@@ -7,6 +7,32 @@ body {
 }
 
 .header-line {
-    background-color: darkolivegreen;
+    background-color: aquamarine;
     height: 6px;
 }
+
+.y-wrap {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.stats-block {
+   margin: 50px;
+   padding: 20px;
+}
+
+.stats-block__stats {
+    float: left 
+}
+
+.stats-block__stats--title {
+    width: 30%
+}
+
+.stats-block__stats--data {
+    width: 70%
+}
+
+
+/*
+BEM (block-element-modifier) as we nest elements inside other elements, the parent element is the block
