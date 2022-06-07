@@ -2,13 +2,22 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.light-grey {
-    color: #aaa
+h1 {
+    margin-bottom: 0px;
+    font-size: 2.75rem;
 }
 
-.header-line {
-    background-color: aquamarine;
-    height: 6px;
+main h2 {
+    margin-top: 0;
+}
+
+header p {
+    margin: 12px 0 20px;
+}
+
+main p, 
+main li {
+    line-height: 1.4rem;
 }
 
 .y-wrap {
@@ -17,22 +26,54 @@ body {
 }
 
 .stats-block {
-   margin: 50px;
-   padding: 20px;
-}
+    margin: 20px 0;
+ }
 
 .stats-block__stats {
-    float: left 
+    float: left;
 }
 
 .stats-block__stats--title {
-    width: 30%
+    width: 30%;
 }
 
 .stats-block__stats--data {
-    width: 70%
+    width: 70%;
+}
+
+.color-body-text {
+    color: #414141;
+}
+
+.light-grey {
+    color: #bababa;
+}
+
+.header-line {
+    background-color: #33c6b3;
+    height: 6px;
+    margin-top: -6px;
+}
+
+.h2-color {
+    color: #010101;
+}
+
+
+.list {
+    margin-top: 6px 0 24px;
+    padding-left: 36px;
+}
+
+.list--double {
+    margin-top: 0;
+    display: inline-block;
 }
 
 
 /*
-BEM (block-element-modifier) as we nest elements inside other elements, the parent element is the block
+BEM (block_element--modifier) as we nest elements inside other elements, the parent element is the block
+
+body text  #7f7f7f
+h1 text 010101
+subtitle 242424
