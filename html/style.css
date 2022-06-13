@@ -77,3 +77,8 @@ BEM (block_element--modifier) as we nest elements inside other elements, the par
 body text  #7f7f7f
 h1 text 010101
 subtitle 242424
+
+display: flex
+flex-direction: row
+justify-content: space-between
+flex-wrap: wrap
