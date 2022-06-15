@@ -44,3 +44,10 @@ allows style rules and CSS syntax to be included in an HTML document
 **title**
 contains text that can be used ina tool tip or to be read by screren readers
 NOT the same as the title element
+
+**type**
+denotes the type on an element which can have more than one type, commonly used on 
+`<script>` and `<input>` elements
+
+**width**
+applies a width in pixels to the element using a numerical value only; used sparingly
