@@ -1,0 +1,49 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: sans-serif;
+    color: #444;
+    margin: 0;
+}
+
+header {
+    background-color: #666;
+    color: white;
+    padding: 28px 0;
+    /*header has a background, so we don't want the wrap on this portion*/
+}
+
+footer {
+    background-color: #444;
+    color: #999;
+    padding: 34px 0;
+    text-align: center;
+}
+
+main {
+    flex-grow: 1; /* this is the child we want to grow, so add the flex here*/
+}
+
+.y-wrap {
+    margin: 0 auto; /* 0 is for top and bottom; L/R auto means - figure out what it should be and make them the same */ 
+    width: 90%;
+}
+
+.y-sticky {
+    display: flex; /*default is row, so need to add flex direcion to get parent/child in column instead */
+    flex-direction: column;
+}
+
+
+/*the text alignment is a little tricky to do the RIGHT way 
+    wrong way would be to add "12px" to padding in header, footer and body
+    reason not to do that is bc if you change it one place, you have to change it elsewhere
+    doesnt follow DRY concept (dont't repeat yourself)
+        
+   for flexbox- there is a parent and child(s) and that's it
+     a
+     a
+
+*/
