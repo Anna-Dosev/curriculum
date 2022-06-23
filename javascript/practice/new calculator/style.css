@@ -1,0 +1,34 @@
+
+.numbers {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.numbers div { /* targets all the children of the digits div class */
+    background-color: #ccc;
+    cursor: pointer;
+    padding: 20px;
+    flex: 0 1 20%;
+    margin: 10px;
+    text-align: center;
+}
+
+.display {
+    border: 1px solid #999;
+    padding: 14px 6px;
+}
+
+.operators {
+    display: flex;
+    flex-wrap:wrap;
+    font-size: 2rem;
+}
+
+.operators div {
+    background-color: aliceblue;
+    cursor: pointer;
+    padding: 20px;
+    flex: 0 1 15%;
+    margin: 10px;
+    text-align: center;
+}
