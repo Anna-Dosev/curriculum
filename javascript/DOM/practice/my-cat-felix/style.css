@@ -1,0 +1,4 @@
+.caption { /* able to edit via _caption.classList = 'caption';_ in main.js */
+    font-size: 1.25rem;
+    color: #333;
+}
