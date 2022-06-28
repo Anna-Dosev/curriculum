@@ -3,54 +3,101 @@
     display: flex;
     flex: 1 3 auto;
     flex-wrap: wrap;
-    max-width: 75%;
+    justify-content: space-between;
+    max-width: 339px;
+    transition: all 500ms ease-in-out;
 }
 
 .numbers div { /* targets all the children of the digits div class */
-    background-color: #ccc;
+    background-color: #eee;
+    border: 1px solid transparent;
     cursor: pointer;
-    padding: 20px;
-    flex: 0 1 16%;
-    margin: 10px;
+    flex: 0 1 auto;
+    font-size: 1.5rem;
+    margin: 10px 0;
+    padding: 20px 0;
     text-align: center;
+    width: 104px;
+}
+
+.numbers div:hover {
+    border: 1px solid #777;
+    filter: drop-shadow(1px 1px 1px #999)
 }
 
 .display {
-    border: 1px solid #999;
+    border: 1px solid #bbb;
     font-size: 1.5rem;
     padding: 6px;
     min-height: 36px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    transition: all 500ms ease-in-out;
+}
+
+.display:hover { /* psuedo-selector*/
+    border: 3px solid #777;
+    filter: drop-shadow(1px 1px 1px #999)
 }
 
 .operators {
     display: flex;
     font-size: 2rem;
+    justify-content: space-between;
 }
 
 .operators div {
-    background-color: aliceblue;
+    background-color: #ccc;
+    border: 1px solid transparent;
     cursor: pointer;
-    padding: 20px;
-    flex: 0 1 20%;
-    margin: 10px;
+    flex: 0 1 auto;
+    margin: 10px 0;
+    padding: 12px 0;
     text-align: center;
+    width: 104px;
+}
+
+.operators div:hover {
+    border: 1px solid #777;
+    filter: drop-shadow(1px 1px 1px #999);
 }
 
 .equals {
+    align-items: center;
     background-color: #4d90fe;
+    border: 1px solid transparent;
     color: white;
+    cursor: pointer;
     display: flex;  
-    flex: 0 1 25%;
+    flex: 0 1 auto;
     font-size: 2rem;
     justify-content: center;
-    align-items: center;
     margin: 10px 0;
-    cursor: pointer;
+    width: 104px;
+    transition: all 500ms ease-in-out;
+}
+
+.equals:hover {
+    border: 1px solid #777;
+    filter: drop-shadow(1px 1px 1px #999);
 }
 
 .keypad {
     display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    border: 1px solid #ddd;
+    color: #333;
+    font-family: sans-serif;
+    margin: 20px auto;
+    padding: 20px 0;
+    width: 500px;
+}
+
+.y-inner-wrap {
+    margin: 0 auto;
+    width: 456px;
 }
