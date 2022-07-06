@@ -1,0 +1,13 @@
+* {
+    font-family: sans-serif;
+}
+
+.question {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.answer {
+    font-family: monospace;
+    margin-top: 14px;
+}
