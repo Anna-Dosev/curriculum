@@ -1,0 +1,19 @@
+.container {
+    font-family: sans-serif;
+}
+
+li {
+    cursor: pointer;
+    margin: 14px 0;
+}
+
+.question {
+    align-items: center;
+    display: flex;
+    
+}
+
+.feedback {
+    font-size: 2.5rem;
+    margin-left: 40px;
+}
