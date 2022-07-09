@@ -1,0 +1,58 @@
+* {
+    font-family: sans-serif;
+}
+
+.title {
+    margin: 14px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    justify-content: center;
+}
+
+.books {
+    border-radius: 15px;
+    font-size: 1.25rem;
+    text-align: center;
+    background-color: teal;
+    color: whitesmoke;
+    margin: 10px;
+  }
+
+  .members {
+    border-radius: 15px;
+    font-size: 1.25rem;
+    text-align: center;
+    background-color: teal;
+    color: whitesmoke;
+    margin: 10px;
+  }
+
+
+.book-container {
+    border: 2px solid grey;
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    margin: 10px;
+  }
+
+  .member-container {
+    border: 2px solid grey;
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    margin: 10px;
+  }
+
+  .name {
+      margin: 10px;
+  }
+  
+  .email {
+      color: blue;
+      margin: 10px;
+  }
