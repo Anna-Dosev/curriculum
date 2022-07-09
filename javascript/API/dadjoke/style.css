@@ -1,0 +1,26 @@
+* {
+    font-family: sans-serif;
+}
+
+.emoji-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.25rem;
+}
+
+.likes {
+    margin-right: 35px;
+    border: none;
+    cursor: pointer;
+}
+
+.dislikes {
+    border: none;
+    cursor: pointer;
+}
+
+.joke-button {
+  border-radius: 15px;
+  font-size: 1.25rem;
+  margin: 10px;
+}
