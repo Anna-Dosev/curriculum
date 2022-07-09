@@ -1,26 +1,59 @@
 * {
     font-family: sans-serif;
+    text-align: center;
 }
 
 .emoji-container {
     display: flex;
     flex-direction: row;
-    font-size: 1.25rem;
+    justify-content: center;
+    /* border: 3px solid gray; */
+
 }
 
 .likes {
-    margin-right: 35px;
-    border: none;
     cursor: pointer;
+    border: 4px solid white;
+    margin: 25px;
+}
+
+._likes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* border: 3px solid black; */
+    margin-right: 35px;
 }
 
 .dislikes {
-    border: none;
     cursor: pointer;
+    border: 4px solid white;
+    margin: 25px;
+}
+
+.thumbs-down {
+    display: flex;
+    flex-direction: row;
+    /* border: 3px solid black; */
+    align-items: center;
 }
 
 .joke-button {
   border-radius: 15px;
   font-size: 1.25rem;
-  margin: 10px;
+  text-align: center;
+  background-color: teal;
+  color: whitesmoke;
+}
+
+.joke-button:focus {
+    outline-color: transparent;
+    outline-style:solid;
+    box-shadow: 0 0 0 4px black;
+    transition: 0.7s;
+}
+
+.joke-container {
+    padding: 45px;
+    height: 30px;
 }

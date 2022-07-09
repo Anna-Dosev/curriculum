@@ -1,9 +1,10 @@
 const jokeButton = document.querySelector('.joke-button');
 const jokeContainer = document.querySelector('.joke-container')
+const likeButton = document.querySelector('.likes')
+const dislikeButton = document.querySelector('.dislikes')
 
 let countUp = document.querySelector('.countUp')
 let countDown= document.querySelector('.countDown')
-
 
 const getJoke = async () => {
     const apiData = await fetch('https://icanhazdadjoke.com', {
@@ -20,7 +21,6 @@ let likeCount = 0
 let dislikeCount = 0
 
 function countLikes() {
-    alert()
     likeCount++
     countUp.innerHTML = likeCount
 }
@@ -32,6 +32,6 @@ function countDislikes() {
 
 jokeButton.addEventListener('click', getJoke)
 
-countUp.addEventListener('click', countLikes)
-countDown.addEventListener('click', countDislikes)
+likeButton.addEventListener('click', countLikes)
+dislikeButton.addEventListener('click', countDislikes)
 
