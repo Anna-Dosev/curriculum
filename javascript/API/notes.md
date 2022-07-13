@@ -149,3 +149,7 @@ async function postData(body, id) {
     .catch(err => console.err(err));
   console.log(data);
 ```
+
+### Snippets
+stackblitz: https://stackblitz.com/edit/js-am2hbl?file=index.js
+305 video: https://www.youtube.com/watch?v=B8RM7nfqOLQ&feature=youtu.be
