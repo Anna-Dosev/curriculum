@@ -45,3 +45,107 @@ see index.js file in the API folder
 202 youtube video notes: https://www.youtube.com/watch?v=a31y-nz_d2k
 
 203 youtube video notes: https://www.youtube.com/watch?v=MYpoZKpdWBI
+
+# API 302, 303, 304 and 305
+## We use HTTP verbs to describe API requests and nouns to refer to the data they handle.
+
+## There are many diff types of HTTP requests, but you will maiinly deal with just five of them.
+
+### HTTP Verbs
+There are four verbs; sometimes refer to what they do as CRUD operations
+-create
+    requests:
+        `post` : to create new data
+        `put` : to update data by overwriting everything in the data set (ie. will update all the data even if only changing email address)
+-read
+    requests:
+        `get` : to retrieve data
+-update
+    requests:
+        `put` : see above
+        `patch` : to update data by overwriting only a part of a larger data set (ie. will only update email address)
+        `post` : see above
+-delete
+    requests:
+        `delete` : to delete data
+NOTE: `patch` and `put` are similar but our practices will concentrate on `put`    
+
+## Nouns
+These describe the data and are usually preceded by a `/`
+-`/contacts`
+-`/users`
+-`/photos`
+-`/countries`
+
+## API 304: HTTP status codes provide information about the request after the server has received it
+### Codes fall into 5 categories
+**100s**
+informational; data has been received and is understood
+
+**200s**
+success; the data has been received, understood and accepted
+
+**300s**
+redirection; this may require additional action on the part of the client
+
+**400s**
+client errors
+
+**500s**
+server errors 
+
+# API 305
+## Javascript's `.fetch` API is one way to execute common HTTP requests
+
+**`GET`**
+```javascript
+async function getData() { 
+    const data = await fetch('https://sj-demo-contacts.herokuapp.com/contacts?auth=5x76') //whatever is returned is cached in 'data'
+    .then(response => response.json()) //converts data from api to jason so we can read it
+    .catch(err => console.err(err));
+  console.log(data);
+}
+```
+**`DELETE`**
+```javascript
+async function deleteData(id) { 
+    const data = await fetch(`https://sj-demo-contacts.herokuapp.com/contacts/delete/${id}?auth=5x76`, { //need to set up an options object
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    method: 'DELETE',
+    }) 
+    .then(response => response.json())
+    .catch(err => console.err(err));
+  console.log(data);
+}
+```
+**`POST`**
+```javascript
+async function postData(body) { 
+    const data = await fetch('https://sj-demo-contacts.herokuapp.com/contacts/add?auth=5x7g', {
+    body: JSON.stringify(body),
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    method: 'POST',
+    }) 
+    .then(response => response.json())
+    .catch(err => console.err(err));
+  console.log(data);
+}
+```
+**`PUT`**
+```javascript
+async function postData(body, id) { 
+    const data = await fetch(`https://sj-demo-contacts.herokuapp.com/contacts/${id}?auth=5x76`, {
+    body: JSON.stringify(body),
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    method: 'PUT',
+    }) 
+    .then(response => response.json())
+    .catch(err => console.err(err));
+  console.log(data);
+```
