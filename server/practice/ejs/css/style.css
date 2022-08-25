@@ -1,0 +1,95 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body, html {
+    height: 100%;
+}
+
+footer {
+    background-color: #999;
+    padding: 40px 0;;
+}
+
+/* .sticky-footer {
+    background-color: lightslategrey;
+    padding: 15px;
+    position: sticky;
+    text-align: center;
+    top: 100%
+} */
+
+header {
+    background-color: #ddd;
+    padding: 26px 0;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.y-sticky {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.y-wrap {
+    margin: 0 auto;  /* this centers something that is not 100% width */
+    width: 90%;
+}
+
+.nimg {
+    /* margin: 20px; */
+    overflow: hidden;
+}
+
+.nimg img {
+    height: auto;
+    width: 100%;
+}
+
+.nimg.nimg--sqaure.nimg--pheight img {
+    height: 100%;
+    width: auto;
+}
+
+.nimg--square {
+    height: 200px;
+    width: 200px;
+}
+
+.nimg--tall {
+    height: 400px;
+}
+
+.grid {
+    display: flex;
+}
+
+.grid__4 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    /* display: grid;
+    grid-template-columns: 200px 200px;
+    grid-row: auto auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; */
+}
+
+.grid__4 .nimg--square {
+    flex: 1 0 auto;
+    max-width: 50%;
+}
+
+ul {
+    list-style-type: none;
+}
+.navs {
+    display: flex;
+}
