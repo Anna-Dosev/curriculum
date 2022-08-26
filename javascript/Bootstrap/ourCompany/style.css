@@ -1,0 +1,58 @@
+
+#navList {
+    color: red;
+    text-align: right;
+}
+
+#h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+#column {
+    float: left;
+    width: 33.33%;
+  }
+
+#columnFont {
+    font-weight: bold;
+}
+  
+  /* Clear floats after the columns */
+  #row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  #listFont {
+      font-weight: normal;
+  }
+
+  #footer {
+      text-align: center;
+  }
+
+  /* Rounded border */
+hr.rounded {
+    border-top: 8px solid #bbb;
+    border-radius: 5px;
+    color: darkslateblue;
+  }
+
+  #row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    margin: 20px 60px;
+
+  }
+
+  #images {
+      display: flex;   
+      justify-content: center;
+      padding: 20px;
+      white-space:unset;
+  }
+
