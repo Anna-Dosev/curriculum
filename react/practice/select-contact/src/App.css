@@ -1,0 +1,19 @@
+ul {
+    list-style-type: none;
+    width: 40%;
+}
+
+li {
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+}
+
+.selected {
+    background-color: #ddd;
+    padding: 14px;
+    width: 60%;
+}

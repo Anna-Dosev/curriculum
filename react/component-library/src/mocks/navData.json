@@ -1,0 +1,22 @@
+[
+    {
+      "href": "/",
+      "text": "Home"
+    },
+    {
+      "href": "/about",
+      "text": "About"
+    },
+    {
+      "href": "/portfolio",
+      "text": "Portfolio"
+    },
+    {
+      "href": "/contact",
+      "text": "Contact Us"
+    },
+    {
+      "href": "/signup",
+      "text": "Sign Up"
+    }
+  ]
